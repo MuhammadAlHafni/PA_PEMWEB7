@@ -4,7 +4,10 @@ require '../koneksi.php';
 
 if (!isset($_SESSION['akses']) || $_SESSION['akses'] !== 'admin') {
     header('Location: ../index.php');
-    exit;
+}
+
+if (!isset($_SESSION['akses']) || $_SESSION['akses'] !== 'admin') {
+    header('Location: ../index.php');
 }
 
 if (isset($_POST['tambah'])) {
@@ -57,7 +60,7 @@ while ($row = mysqli_fetch_assoc($hasil)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Addition</title>
+    <title>Document</title>
     <style>
         * {
             margin: 0;
@@ -197,7 +200,6 @@ while ($row = mysqli_fetch_assoc($hasil)) {
 
 <div class="sidebar">
     <div>  
-    <div>
         <h2 href="#" class="logo">Chocolate</h2>
     </div>
     <a href="tampilan.php">Data Menu Coklat</a>
