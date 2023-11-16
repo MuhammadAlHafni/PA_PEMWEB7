@@ -196,7 +196,7 @@ while ($row = mysqli_fetch_assoc($hasil)) {
 
 
 <div class="sidebar">
-    <div>  
+    <div>
         <h2 href="#" class="logo">Chocolate</h2>
     </div>
     <a href="tampilan.php">Data Menu Coklat</a>
